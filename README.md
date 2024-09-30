@@ -3,8 +3,10 @@
 <!-- ABOUT THE PROJECT -->
 ## О проекте
 
-Создание микросервиса, клиент для работы с внешним API и базу данных для хранения данных о счетах и транзакциях между ними, и также валютных курсах. 
+Создание микросервиса, клиент для работы с внешним API и базу данных для хранения данных о счетах и транзакциях между ними, и также о валютных курсах. 
 
-## Процесс регистрации и редактирование профиля/Registration process and profile editing
+## Api для создания банковского счета
 
-![accountcreation](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG?raw=true)
+![accountcreation](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG?raw=true | width=100)
+
+![accountcreation](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation2.PNG?raw=true)
