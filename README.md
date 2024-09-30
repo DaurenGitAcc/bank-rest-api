@@ -9,7 +9,7 @@
 
 ![accountcreation|150x150,50%](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG)
 
-<img src="https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG" width=20% height=20%>
+<img src="https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG" width=75% height=75%>
 
 
 ![accountcreation](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation2.PNG?raw=true)
