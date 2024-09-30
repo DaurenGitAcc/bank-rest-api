@@ -1,5 +1,6 @@
 package com.absattarov.BankRestAPI.controllers;
 
+import com.absattarov.BankRestAPI.dto.AccountCreationDTO;
 import com.absattarov.BankRestAPI.dto.AccountDTO;
 import com.absattarov.BankRestAPI.dto.TransactionDTO;
 import com.absattarov.BankRestAPI.models.Account;
@@ -69,7 +70,10 @@ public class BankController {
         return transactionService.getLimitExceeded(id);
     }
     @PostMapping("/create")  // Создание нового счета
-    public ResponseEntity<HttpStatus> createAccount(@RequestBody @Valid Account account){
+    public ResponseEntity<HttpStatus> createAccount(@RequestBody AccountCreationDTO accountCreationDTO){
+        Account account = new Account();
+        account.setBalance(accountCreationDTO.getBalance());
+        account.setCurrencyShortname(accountCreationDTO.getCurrencyShortname());
         accountService.save(account);
         return ResponseEntity.ok(HttpStatus.OK);
     }

@@ -49,6 +49,18 @@ public class Account {
         this.currentLimitSum = currentLimitSum;
     }
 
+    public Account(int id, double balance, String currencyShortname, double limitSum, Date limitDatetime, String limitCurrencyShortname, double currentLimitSum, List<Transaction> transactionsFrom, List<Transaction> transactionsTo) {
+        this.id = id;
+        this.balance = balance;
+        this.currencyShortname = currencyShortname;
+        this.limitSum = limitSum;
+        this.limitDatetime = limitDatetime;
+        this.limitCurrencyShortname = limitCurrencyShortname;
+        this.currentLimitSum = currentLimitSum;
+        this.transactionsFrom = transactionsFrom;
+        this.transactionsTo = transactionsTo;
+    }
+
     public Account(int id, double balance, String currencyShortname, double limitSum, Date limitDatetime, String limitCurrencyShortname, List<Transaction> transactionsFrom, List<Transaction> transactionsTo) {
         this.id = id;
         this.balance = balance;

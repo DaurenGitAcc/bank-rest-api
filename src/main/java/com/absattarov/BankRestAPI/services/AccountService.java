@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 public class AccountService {
-    private AccountRepository accountRepository;
+    private final AccountRepository accountRepository;
 
     @Autowired
     public AccountService(AccountRepository accountRepository) {
@@ -27,7 +27,7 @@ public class AccountService {
             account.setBalance(10000);
         }
         if(account.getLimitSum()==0){
-            account.setBalance(1000);
+            account.setLimitSum(1000);
             account.setCurrentLimitSum(1000);
         }
         account.setLimitCurrencyShortname("USD");

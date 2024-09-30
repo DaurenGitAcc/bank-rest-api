@@ -20,7 +20,7 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class TransactionService {
     private TransactionRepository transactionRepository;
-    private AccountRepository accountRepository;
+    private final AccountRepository accountRepository;
     private ExchangeRateRepository exchangeRateRepository;
     @Autowired
     public TransactionService(TransactionRepository transactionRepository, AccountRepository accountRepository, ExchangeRateRepository exchangeRateRepository) {
@@ -35,7 +35,7 @@ public class TransactionService {
     }
     // Получение отправленных транзакции с превышением лимита одного конкретного счета
     public List<Transaction> getLimitExceeded(int id){
-        Account account = accountRepository.getReferenceById(id);
+        Account account = accountRepository.getById(id);
         Calendar c = Calendar.getInstance();
         c.set(Calendar.DAY_OF_MONTH, 1);
 
@@ -44,7 +44,7 @@ public class TransactionService {
         LocalDate lastDay = now.with(TemporalAdjusters.lastDayOfMonth());
 
         return transactionRepository.findAllByAccountFromIsAndTransactionDateBetweenAndLimitExceededIsTrue(account,
-                c.getTime(),Date.from(lastDay.atStartOfDay(ZoneId.systemDefault()).toInstant()));
+                c.getTime(),Date.from(lastDay.atStartOfDay(ZoneId.systemDefault()).toInstant().plusMillis(86400000)));
     }
     // Сохранение в базу данных новой транзакции
     @Transactional
