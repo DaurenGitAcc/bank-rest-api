@@ -8,7 +8,8 @@
 ## Api для создания банковского счета
 
 ![accountcreation|150x150,50%](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG)
-![alt]([image.png](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG)){:width="50%"}
-![alt|500](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG)
+
+<img src="https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation.PNG" width=20% height=20%>
+
 
 ![accountcreation](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/AccountCreation2.PNG?raw=true)
