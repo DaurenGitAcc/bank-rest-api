@@ -33,7 +33,7 @@ Spring Boot, Spring JPA, Postgresql, Postman, (Ноут не позволяет 
 ## Диаграмма таблиц БД
 <img src="https://github.com/DaurenGitAcc/bank-rest-api/blob/main/screenshots/bankRst.drawio.png" width=80% height=80%>
 
-[a link](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/resources/db/changelog/0.0.1/changelog-1.sql)
+[a link](https://github.com/DaurenGitAcc/bank-rest-api/blob/main/src/main/resources/db/changelog/0.0.1/changelog-1.sql)
 
 
 
